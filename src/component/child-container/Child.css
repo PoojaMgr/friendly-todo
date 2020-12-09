@@ -1,0 +1,48 @@
+input[type=text]{
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px 10px;
+    border-radius: 7px;
+    width: 50vw;
+    margin-right: 25px;
+    max-width: 265px;
+    background-color: #d3d3d33b;
+}
+input[type=text]:focus {
+    outline-width: 0;
+}
+.button {
+    position: relative;
+    background-color: rgb(22, 22, 102);
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    width: 100px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button:after {
+    content: "";
+    background: rgb(178, 178, 243);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
